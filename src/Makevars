@@ -14,6 +14,7 @@ PKG_CPPFLAGS=-I. -Ivendor -Ivendor/extensions -Ivendor/sqlite3 \
 
 PKG_CXXFLAGS=$(CXX_VISIBILITY)
 PKG_CFLAGS=$(C_VISIBILITY)
+PKG_CFLAGS += -march=native
 
 PKG_LIBS = vendor/sqlite3/sqlite3.o
 
